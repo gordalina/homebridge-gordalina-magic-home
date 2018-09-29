@@ -65,7 +65,6 @@ class LightAccessory {
 
   async getState() {
     const state = await this.light.state();
-    await this.light.disconnect();
 
     const { red, green, blue } = state.color;
     const [h, s, l] = convert.rgb.hsl(red, green, blue);
@@ -86,7 +85,6 @@ class LightAccessory {
       await this.light.off();
     }
 
-    await this.light.disconnect();
   }
 
   async getRGB() {
@@ -113,7 +111,6 @@ class LightAccessory {
     this.hsl = [hue, s, l];
 
     await this.light.color(r, g, b);
-    await this.light.disconnect();
   }
 
   async getSaturation() {
@@ -127,7 +124,6 @@ class LightAccessory {
     this.hsl = [h, saturation, l];
 
     await this.light.color(r, g, b);
-    await this.light.disconnect();
   }
 
   async getBrightness() {
@@ -139,7 +135,6 @@ class LightAccessory {
     const [h, s, l] = this.hsl;
     const [r, g, b] = convert.hsl.rgb(h, s, l);
     await this.light.brightness(r, g, b, brightness);
-    await this.light.disconnect();
   }
 }
 
