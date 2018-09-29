@@ -1,0 +1,29 @@
+{
+  "name": "@gordalina/homebridge-magic-home",
+  "version": "0.0.1",
+  "description": "Magic Home WiFi plugin for homebridge",
+  "licenses": "BSD-3-Clause",
+  "repository": "github:gordalina/homebridge-magic-home.git",
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.3.0"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "magic-home",
+    "magichome",
+    "Flux",
+    "magic",
+    "home",
+    "wifi",
+    "zengge",
+    "led",
+    "strips",
+    "lighbulb",
+    "blub"
+  ],
+  "dependencies": {
+    "@gordalina/magic-home": "^1.0.0",
+    "color-convert": "^1.9.0"
+  }
+}
