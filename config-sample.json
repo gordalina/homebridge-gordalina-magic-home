@@ -1,5 +1,6 @@
 {
   "description": "An example Homebridge config for MagicHome.",
+
   "bridge": {
     "name": "Homebridge",
     "username": "DC:39:3D:F3:CE:31",
@@ -8,6 +9,6 @@
   },
 
   "platforms": [{
-    "platform": "@gordalina/homebridge-magic-home"
+    "platform": "homebridge-gordalina-magic-home"
   }]
 }
