@@ -1,6 +1,6 @@
 {
   "name": "homebridge-gordalina-magic-home",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Magic Home WiFi plugin for homebridge",
   "licenses": "MIT",
   "repository": "github:gordalina/homebridge-gordalina-magic-home.git",
